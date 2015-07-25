@@ -1,0 +1,26 @@
+inherit_from: ~/.rubocop.yml
+
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'features/**/*'
+    - 'script/**/*'
+    - 'spec/**/*'
+    - 'test/**/*'
+    - 'tmp/**/*'
+
+Documentation:
+  Enabled: false
+
+Style/CommentAnnotation:
+  Enabled: false
+
+Style/SpaceInsideBrackets:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120

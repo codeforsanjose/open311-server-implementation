@@ -1,28 +1,30 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.3'
-
 gem 'rails-api'
-
-gem 'spring', :group => :development
-
-
 gem 'pg'
+gem 'puma'
 
+gem 'pry-rails'
+gem 'awesome_print'
 
+group :test do
+  gem 'simplecov'
+end
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+group :development do
+  gem 'spring', platforms: [ :mri ]
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+  gem 'better_errors'
+  gem 'binding_of_caller', platforms: [ :mri ]
+  gem 'brakeman'
+  gem 'sandi_meter'
+  gem 'railroady'
+end
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano', :group => :development
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'shoulda'
+  gem 'fabrication'
+  gem 'faker'
+end
