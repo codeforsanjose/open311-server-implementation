@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       resources :services, except: [:new, :edit]
     end
   end
+
+  root 'utility#index'
 end
