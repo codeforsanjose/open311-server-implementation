@@ -22,5 +22,8 @@ Style/CommentAnnotation:
 Style/SpaceInsideBrackets:
   Enabled: false
 
+Style/SingleSpaceBeforeFirstArg:
+  Enabled: false
+
 Metrics/LineLength:
   Max: 120
