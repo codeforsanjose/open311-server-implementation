@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+ruby '2.2.2'
+
+group :heroku do
+  gem 'rails_12factor'
+end
+
 gem 'rails', '4.2.3'
 gem 'rails-api'
 gem 'pg'
