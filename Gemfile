@@ -4,6 +4,7 @@ gem 'rails', '4.2.3'
 gem 'rails-api'
 gem 'pg'
 gem 'puma'
+gem 'uuid'
 
 gem 'pry-rails'
 gem 'awesome_print'

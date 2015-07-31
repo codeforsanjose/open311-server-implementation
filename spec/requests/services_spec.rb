@@ -40,12 +40,5 @@ RSpec.describe 'Services', type: :request do
       expect(JSON.parse(response.body)['id']).to eql(dummy.id)
       expect(JSON.parse(response.body)['description']).to eql(dummy.description)
     end
-
-    it 'returns :not_implemented if service.metadata is true' do
-      dummy = Fabricate(:service, metadata: true)
-      get api_v2_service_path(id: dummy.id), format: :json
-      expect(response).to have_http_status(501)
-    end
-
   end
 end
