@@ -1,0 +1,2 @@
+class Blackbox < Service
+end

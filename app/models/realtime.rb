@@ -1,0 +1,2 @@
+class Realtime < Service
+end
