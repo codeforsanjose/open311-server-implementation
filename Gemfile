@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.2.3'
 
 group :heroku do
   gem 'rails_12factor'
 end
 
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.4'
 gem 'rails-api'
 gem 'pg'
 gem 'puma'
